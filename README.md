@@ -32,8 +32,6 @@ We used Tailwind CSS to style the components rapidly, leveraging its utility-fir
 Follow these steps to set up and run the project locally:
 
 # 1. Clone the Repository
-
-```bash
 git clone https://github.com/krishan05530/NotesCreate.git
 cd NotesCreate
 
