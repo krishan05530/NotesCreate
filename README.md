@@ -11,9 +11,9 @@ Currently, two official plugins are available:
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
 
-## Why localStorage + key naming 
+🧠 Why localStorage and Key Naming
 
-Localstorage is a simple,that store the data and  persists data even after a page refresh.
+Localstorage is a simple,that allow the application to store the data directly in user browser and  persists data even after a page refresh.
 Perfect for this note-taking app because it doesn't require a backend server.
 have to store in the localstorage by using .setItem method , passing key and JSON.stringfy(value)
 Example:
@@ -27,5 +27,20 @@ example:
 
 using Tailwind to style the component rapidly
 
-## Setup & run steps
+## 🛠️ Project Setup & Run Instructions
 
+Follow these steps to set up and run the project locally:
+
+### 1. Clone the Repository
+git clone https://github.com/krishan05530/NotesCreate.git
+cd NotesCreate
+
+2. Install Dependencies
+Make sure you have Node.js installed (recommended version: 16+).
+npm install
+
+3. Start the Development Server
+npm run dev
+
+This will start the local development server at:
+http://localhost:5173
