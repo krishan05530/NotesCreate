@@ -25,22 +25,22 @@ example:
 
 ## Styling Approach
 
-using Tailwind to style the component rapidly
+We used Tailwind CSS to style the components rapidly, leveraging its utility-first classes for responsive design and ease of customization.
 
 ## 🛠️ Project Setup & Run Instructions
 
 Follow these steps to set up and run the project locally:
 
-### 1. Clone the Repository
+# 1. Clone the Repository
 git clone https://github.com/krishan05530/NotesCreate.git
 cd NotesCreate
 
-2. Install Dependencies
-Make sure you have Node.js installed (recommended version: 16+).
+# 2. Install Dependencies
 npm install
 
-3. Start the Development Server
+# 3. Start the Development Server
 npm run dev
 
-This will start the local development server at:
-http://localhost:5173
+This will start the local development server at: http://localhost:5173
+
+
