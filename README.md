@@ -29,18 +29,27 @@ We used Tailwind CSS to style the components rapidly, leveraging its utility-fir
 
 ## 🛠️ Project Setup & Run Instructions
 
+# NotesCreate
+
 Follow these steps to set up and run the project locally:
 
-# 1. Clone the Repository
+### 1. Clone the Repository
+
+```bash
 git clone https://github.com/krishan05530/NotesCreate.git
 cd NotesCreate
+```
 
-# 2. Install Dependencies
+### 2. Install Dependencies
+
+```bash
 npm install
+```
 
-# 3. Start the Development Server
+### 3. Start the Development Server
+
+```bash
 npm run dev
+```
 
-This will start the local development server at: http://localhost:5173
-
-
+This will start the local development server at: [http://localhost:5173](http://localhost:5173)
