@@ -7,6 +7,7 @@ import Nav from './components/Nav';
 
 function App() {
 
+  // to set the view to add when adding the list  or  to list when showing the notes list 
   const[view, setView]=useState('add');
 
 

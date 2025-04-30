@@ -2,11 +2,16 @@ import React, { useState } from 'react'
 import { setNotes, getNotes } from '../utils/storage';
 const AddNote = ({ onAdd }) => {
 
+    //to store the value of title and content 
     const [formData, setFormData] = useState({ title: '', content: '' });
+
+    // to show saving.. when submitng the form by making loading true
     const [loading, setLoading] = useState(false);
 
+    //while fetching the value from localstorage if error recieve then show that error
     const [error, setError] = useState(null);
 
+    //handle the chnages that happen in input field, so make form updated
     const handleChange = (e) => {
         e.preventDefault();
 
@@ -18,6 +23,8 @@ const AddNote = ({ onAdd }) => {
     }
 
 
+    //on Form submit button , create the new note and create updatedNotes with this new note 
+    // then save this updated notes into localstorage by callng setNotes()
     const handleSubmit = (e) => {
         e.preventDefault();
         setLoading(true);
@@ -73,7 +80,7 @@ const AddNote = ({ onAdd }) => {
                     required
                 ></textarea>
                 <button type='submit'
-                    //    className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+                    
                     className=' px-4 py-2  bg-blue-500 text-white rounded hover:bg-blue-600'
                 >
                     {

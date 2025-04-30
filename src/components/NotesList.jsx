@@ -1,16 +1,18 @@
 import React, { useEffect, useState } from 'react'
 import { getNotes, removeNote } from '../utils/storage'
 const NotesList = () => {
-
+//to store the notes list fetched from the localsto-orage
     const [notes, setupNotes] = useState([]);
 
 
+    // calling the getNotes() to fetch the notes List
     useEffect(() => {
         const storedNotes = getNotes();
         setupNotes(storedNotes);
     }, [])
 
 
+    // handle the delete note from List based on id
     const handleDelete = (id) => {
         removeNote(id);
         setupNotes((prevNotes) => prevNotes.filter((note) => note.id !== id));
