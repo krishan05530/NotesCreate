@@ -25,7 +25,16 @@ const NotesList = () => {
                     <p className='text-center text-gray-500'>No notes available</p>
                 ) :
                     (
-                        <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6" >
+                        <div
+                        //  className={`grid gap-6 ${notes.length===1 ? 'place-items-center' :  notes.length===2 ? 'place-items-center':'grid-cols-1 sm:grid-cols-2 md:grid-cols-3'} `}
+                         className={`flex flex-wrap gap-6 ${
+                            notes.length === 1
+                              ? 'justify-center'
+                              : notes.length === 2
+                              ? 'justify-center'
+                              : 'justify-start'
+                          }`}
+                         >
 
                             {notes.map((note) => (
                                 <div key={note.id} className=' w-80 p-4 rounded shadow flex flex-col bg-white  '>
